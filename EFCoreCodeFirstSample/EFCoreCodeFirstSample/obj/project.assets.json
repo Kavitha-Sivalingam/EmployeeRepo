@@ -2066,11 +2066,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\kavitha\\POC\\EmployeeRepo\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample.csproj",
+      "projectUniqueName": "D:\\kavitha\\POC\\Recent\\EmployeeRepo\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample.csproj",
       "projectName": "EFCoreCodeFirstSample",
-      "projectPath": "D:\\kavitha\\POC\\EmployeeRepo\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample.csproj",
+      "projectPath": "D:\\kavitha\\POC\\Recent\\EmployeeRepo\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample.csproj",
       "packagesPath": "C:\\Users\\Naresh\\.nuget\\packages\\",
-      "outputPath": "D:\\kavitha\\POC\\EmployeeRepo\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample\\obj\\",
+      "outputPath": "D:\\kavitha\\POC\\Recent\\EmployeeRepo\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Naresh\\AppData\\Roaming\\NuGet\\NuGet.Config",
