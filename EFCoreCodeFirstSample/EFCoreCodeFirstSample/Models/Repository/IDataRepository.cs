@@ -3,9 +3,9 @@
     public interface IDataRepository<TEntity>
     {
         IEnumerable<TEntity> GetAll();
-        TEntity Get(long id);
-        void Add(TEntity entity);
-        void Update(TEntity dbEntity, TEntity entity);
-        void Delete(TEntity entity);
+        Task<List<TEntity>> Get(long id);
+        Task Add(TEntity entity);
+        Task Update(TEntity entity);
+        Task Delete(long id);
     }
 }

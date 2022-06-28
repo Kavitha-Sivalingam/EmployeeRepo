@@ -1,6 +1,7 @@
 using EFCoreCodeFirstSample.Models;
 using EFCoreCodeFirstSample.Models.DataManager;
 using EFCoreCodeFirstSample.Models.Repository;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
 
@@ -18,6 +19,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+///builder.Services.AddSingleton<IDataRepository<Employee>>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,5 +30,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+//app.UseAuthorization();
+
+app.MapControllers();
 
 app.Run();

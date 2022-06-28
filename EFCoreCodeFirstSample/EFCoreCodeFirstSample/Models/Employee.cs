@@ -12,5 +12,8 @@ namespace EFCoreCodeFirstSample.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string PhoneNumber { get; set; }
+
+        // public record EmployeeRequest(long EmployeeId, string? FirstName, string? LastName, string? PhoneNumber);
+
     }
 }

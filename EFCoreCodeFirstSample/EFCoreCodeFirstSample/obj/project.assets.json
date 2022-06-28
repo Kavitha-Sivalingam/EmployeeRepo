@@ -11,6 +11,21 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.6"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -723,6 +738,21 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.6": {
+      "sha512": "kXznF3FSjukLhrvDSCSU2rZCmgn2eJtFkKKUFWB57eQu3zatLqCJAKWQwjmtumMv6Uke0YBBuY7ecqF3T2YpbQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/6.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.xml",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.nuspec"
       ]
     },
     "Microsoft.CSharp/4.5.0": {
@@ -2054,6 +2084,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.6",
       "Microsoft.EntityFrameworkCore >= 6.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.6",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.6",
@@ -2061,19 +2092,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Naresh\\.nuget\\packages\\": {}
+    "C:\\Users\\kavitha.sivalingam\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\kavitha\\POC\\Recent\\EmployeeRepo\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample.csproj",
+      "projectUniqueName": "C:\\Kavitha\\DyanskeBank\\POC\\EmployeeRepo\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample.csproj",
       "projectName": "EFCoreCodeFirstSample",
-      "projectPath": "D:\\kavitha\\POC\\Recent\\EmployeeRepo\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample.csproj",
-      "packagesPath": "C:\\Users\\Naresh\\.nuget\\packages\\",
-      "outputPath": "D:\\kavitha\\POC\\Recent\\EmployeeRepo\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample\\obj\\",
+      "projectPath": "C:\\Kavitha\\DyanskeBank\\POC\\EmployeeRepo\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample.csproj",
+      "packagesPath": "C:\\Users\\kavitha.sivalingam\\.nuget\\packages\\",
+      "outputPath": "C:\\Kavitha\\DyanskeBank\\POC\\EmployeeRepo\\EFCoreCodeFirstSample\\EFCoreCodeFirstSample\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Naresh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kavitha.sivalingam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2099,6 +2135,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.6, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.6, )"
@@ -2136,7 +2176,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
